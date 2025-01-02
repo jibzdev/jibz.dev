@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Jibzdev - Full Stack Developer Portfolio">
+    <meta name="description" content="Portfolio of a Full Stack Rails Developer showcasing projects, skills, and experience in web development.">
+    <meta name="keywords" content="web developer, full stack developer, rails developer, portfolio, javascript, ruby on rails">
+    <meta name="author" content="Jibzdev">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jibz.dev/">
+    <meta property="og:title" content="Jibzdev - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Portfolio of a Full Stack Rails Developer showcasing projects, skills, and experience in web development.">
+    <meta property="og:image" content="https://jibz.dev/assets/images/bg.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jibz.dev/">
+    <meta property="twitter:title" content="Jibzdev - Full Stack Developer Portfolio">
+    <meta property="twitter:description" content="Portfolio of a Full Stack Rails Developer showcasing projects, skills, and experience in web development.">
+    <meta property="twitter:image" content="https://jibz.dev/assets/images/bg.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/bg.png">
+    <link rel="apple-touch-icon" href="./assets/images/bg.png">
+
+    <title>Jibzdev - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .floating-icon {
+            position: absolute;
+            animation: float 15s infinite linear;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) scale(1);
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 0.2;
+            }
+            100% {
+                transform: translateY(-100px) scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="text-white">
+    
+    <nav class="fixed w-full z-50" id="navbar">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+        <div class="w-full transition-all duration-300" id="nav-container">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-['Space_Grotesk'] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                        <i class="devicon-github-original"></i> Jibzdev
+                    </div>
+                    <div class="hidden md:flex space-x-8 font-['Space_Grotesk']">
+                        <a href="#home" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Home</a>
+                        <a href="#skills" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Skills</a>
+                        <a href="#projects" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Projects</a>
+                        <a href="#contact" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
+        <div id="floating-icons-container" class="absolute inset-0 overflow-hidden"></div>
+        <div class="overlay z-0"></div>
+        <div class="text-center z-10">
+            <h1 class="text-7xl font-bold mb-4 animate-fade-in-down">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                    Hello, I'm Ragger
+                </span>
+            </h1>
+            <p class="text-2xl text-gray-300" x-data="{ text: '', fullText: 'Full Stack Rails Developer' }" x-init="(() => {
+                let i = 0;
+                let interval = setInterval(() => {
+                    if (i <= fullText.length) {
+                        text = fullText.substring(0, i);
+                        i++;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 100)
+            })()" x-text="text"></p>
+            <div class="mt-12 flex justify-center space-x-8">
+                <a href="https://github.com/jibzdev" target="_blank" class="text-4xl hover:text-blue-400 transition-all hover:scale-110">
+                    <i class="devicon-github-original"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ragger-ebrahim-8015b5294/" target="_blank" class="text-4xl hover:text-blue-400 transition-all hover:scale-110">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="relative py-20 bg-black bg-opacity-80">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-16 text-center scroll-reveal">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                    My Projects
+                </span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20">
+                    <div class="relative group">
+                        <img src="./assets/images/medfinals.png" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="space-x-4">
+                                <a href="https://github.com/jibzdev/medfinals" class="text-white hover:text-blue-400 text-2xl">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://medfinals.com/" class="text-white hover:text-blue-400 text-2xl">
+                                    <svg class="w-6 h-6 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Medfinals</h3>
+                        <p class="text-gray-400 mb-4">Medical Revision Website for medical students and teachers to study and revise for exams.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <i class="devicon-ruby-plain colored text-xl" title="Ruby"></i>
+                            <i class="devicon-javascript-plain colored text-xl" title="JavaScript"></i>
+                            <i class="devicon-rails-plain colored text-xl" title="Ruby on Rails"></i>
+                            <i class="devicon-postgresql-plain colored text-xl" title="PostgreSQL"></i>
+                            <i class="devicon-html5-plain colored text-xl" title="HTML5"></i>
+                            <i class="devicon-css3-plain colored text-xl" title="CSS3"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <div class="relative group">
+                        <img src="./assets/images/ammo.png" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="space-x-4">
+                                <a href="https://github.com/jibzdev/ammo" class="text-white hover:text-blue-400 text-2xl">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://ammo.lol" class="text-white hover:text-blue-400 text-2xl">
+                                    <svg class="w-6 h-6 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ammo</h3>
+                        <p class="text-gray-400 mb-4">The best biolink platform on the market, create and share your links with ease.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <i class="devicon-ruby-plain colored text-xl" title="Ruby"></i>
+                            <i class="devicon-javascript-plain colored text-xl" title="JavaScript"></i>
+                            <i class="devicon-rails-plain colored text-xl" title="Ruby on Rails"></i>
+                            <i class="devicon-postgresql-plain colored text-xl" title="PostgreSQL"></i>
+                            <i class="devicon-html5-plain colored text-xl" title="HTML5"></i>
+                            <i class="devicon-css3-plain colored text-xl" title="CSS3"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <div class="relative group">
+                        <img src="./assets/images/neonairlines.png" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="space-x-4">
+                                <a href="https://github.com/jibzdev/neonairlines" class="text-white hover:text-blue-400 text-2xl">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://neonairlines.com" class="text-white hover:text-blue-400 text-2xl">
+                                    <svg class="w-6 h-6 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Neon Airlines</h3>
+                        <p class="text-gray-400 mb-4">Modern e-commerce platform for purchasing neon lights and other neon products.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <i class="devicon-html5-plain colored text-xl" title="HTML5"></i>
+                            <i class="devicon-javascript-plain colored text-xl" title="JavaScript"></i>
+                            <i class="devicon-css3-plain colored text-xl" title="CSS3"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <div class="relative group">
+                        <img src="./assets/images/jibzbot.png" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="space-x-4">
+                                <a href="https://github.com/jibzdev/jibzbot" class="text-white hover:text-blue-400 text-2xl">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://jibz.dev/bot" class="text-white hover:text-blue-400 text-2xl">
+                                    <svg class="w-6 h-6 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Jibz Bot</h3>
+                        <p class="text-gray-400 mb-4">AI Discord bot for discord servers to communicate with and help you.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <i class="devicon-javascript-plain colored text-xl" title="JavaScript"></i>
+                            <i class="devicon-nodejs-plain colored text-xl" title="Node.js"></i>
+                            <i class="devicon-express-original text-xl" title="Express.js"></i>
+                            <i class="devicon-npm-original-wordmark colored text-xl" title="npm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <div class="relative group">
+                        <img src="./assets/images/dropped.png" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="space-x-4">
+                                <a href="https://github.com/jibzdev/dropped" class="text-white hover:text-blue-400 text-2xl">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://jibz.dev/dropped" class="text-white hover:text-blue-400 text-2xl">
+                                    <svg class="w-6 h-6 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dropped</h3>
+                        <p class="text-gray-400 mb-4">Dropped is a lightweight JavaScript game where you drop blocks and ascend to the top.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <i class="devicon-html5-plain colored text-xl" title="HTML5"></i>
+                            <i class="devicon-css3-plain colored text-xl" title="CSS3"></i>
+                            <i class="devicon-javascript-plain colored text-xl" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <div class="relative group">
+                        <img src="./assets/images/linebarbers.png" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="space-x-4">
+                                <a href="https://github.com/jibzdev/linebarbers" class="text-white hover:text-blue-400 text-2xl">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="https://linebarbers.com" class="text-white hover:text-blue-400 text-2xl">
+                                    <svg class="w-6 h-6 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Line Barbers</h3>
+                        <p class="text-gray-400 mb-4">Website for a local barbershop in Portsmouth, Drayton in the UK.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <i class="devicon-javascript-plain colored text-xl" title="JavaScript"></i>
+                            <i class="devicon-html5-plain colored text-xl" title="HTML5"></i>
+                            <i class="devicon-css3-plain colored text-xl" title="CSS3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-20">
+                <button class="relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-600 before:to-blue-600 before:opacity-0 before:transition-opacity before:duration-500 hover:before:opacity-100 scroll-reveal">
+                    <span class="relative z-10">View All Projects</span>
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="gradient-bg text-white py-12 relative">
+        <div class="overlay"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold mb-4">Jibzdev</h3>
+                    <p class="text-gray-300">Full Stack Rails Developer</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/jibzdev" class="hover:text-blue-400 transition-colors">
+                            <i class="devicon-github-original text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/jibzdev" class="hover:text-blue-400 transition-colors">
+                            <i class="devicon-linkedin-plain text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
+                        <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-300">Feel free to reach out!</p>
+                    <a href="mailto:contact@jibzdev.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+                        contact@jibzdev.com
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Jibzdev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

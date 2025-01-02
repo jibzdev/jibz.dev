@@ -1,0 +1,65 @@
+/* Webkit browsers */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2980b9, #6c3483);
+}
+
+#particles-js {
+    height: auto;
+}
+.gradient-bg {
+    background: linear-gradient(135deg, #000428, #1a1a2e, #16213e);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    position: relative;
+}
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.tech-stack-icon {
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+}
+.tech-stack-icon:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 0.5rem currentColor);
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+}
