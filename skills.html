@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Jibzdev - Skills">
+    <meta name="description" content="Skills and expertise of a Full Stack Rails Developer">
+    <meta name="keywords" content="web developer, full stack developer, rails developer, skills, javascript, ruby on rails">
+    <meta name="author" content="Jibzdev">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jibz.dev/skills">
+    <meta property="og:title" content="Jibzdev - Skills">
+    <meta property="og:description" content="Skills and expertise of a Full Stack Rails Developer">
+    <meta property="og:image" content="https://jibz.dev/assets/images/bg.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jibz.dev/skills">
+    <meta property="twitter:title" content="Jibzdev - Skills">
+    <meta property="twitter:description" content="Skills and expertise of a Full Stack Rails Developer">
+    <meta property="twitter:image" content="https://jibz.dev/assets/images/bg.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+
+    <title>Jibzdev - Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="text-white">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#1a1a2e]">
+        <div class="relative flex flex-col items-center">
+            <div class="w-24 h-24 border-4 border-blue-400/30 rounded-full animate-[spin_2s_linear_infinite]">
+                <div class="absolute top-0 left-0 w-24 h-24 border-4 border-t-blue-400 border-r-purple-500 border-b-blue-400 border-l-purple-500 rounded-full animate-[spin_1.5s_linear_infinite_reverse]"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full animate-[pulse_1s_ease-in-out_infinite]"></div>
+            </div>
+            <div class="mt-8 text-xl font-['Space_Grotesk']">
+                <span class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 animate-[pulse_1.5s_ease-in-out_infinite]">
+                    Loading
+                </span>
+                <span class="dots animate-[bounce_1s_ease-in-out_infinite]">...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50" id="navbar">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+        <div class="w-full transition-all duration-300" id="nav-container">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-['Space_Grotesk'] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                        <i class="devicon-github-original"></i> Jibzdev
+                    </div>
+                    <div class="hidden md:flex space-x-8 font-['Space_Grotesk']">
+                        <a href="index.html" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Home</a>
+                        <a href="skills.html" class="text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Skills</a>
+                        <a href="projects.html" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Projects</a>
+                        <a href="contact.html" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background with particles -->
+    <div id="particles-js" class="fixed inset-0"></div>
+
+    <!-- Skills Section -->
+    <section class="relative min-h-screen pt-32 pb-20 gradient-bg">
+        <div class="overlay z-0"></div>
+        <div id="floating-icons-container" class="absolute inset-0 overflow-hidden"></div>
+        <div class="container mx-auto px-6 relative z-10 mt-12">
+            <h1 class="text-5xl font-bold text-center mb-8 scroll-reveal">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                    My Skills & Expertise
+                </span>
+            </h1>
+
+            <!-- About Me Section -->
+            <div class="max-w-3xl mx-auto mb-16 scroll-reveal">
+                <p class="text-lg text-gray-300 leading-relaxed text-center">
+                    I'm currently pursuing my Bachelor's degree in Software Engineering at the University of Portsmouth, with plans to continue into a Master's in Cybersecurity in 2025, aiming to graduate in 2026. As a Full Stack Rails Developer, I've developed strong capabilities in building web applications using Ruby on Rails and modern web technologies. With a solid foundation in Linux systems, I combine my academic knowledge with practical development skills to create efficient and secure applications. I'm passionate about expanding my expertise in both software development and cybersecurity while maintaining clean, well-structured code.
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Backend Development -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <h3 class="text-xl font-bold mb-4">Backend Development</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-ruby-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>Ruby</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-rails-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>Ruby on Rails</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-postgresql-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>PostgreSQL</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <h3 class="text-xl font-bold mb-4">Frontend Development</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-javascript-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>JavaScript</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-html5-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>HTML5</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-css3-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>CSS3</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="scroll-reveal bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <h3 class="text-xl font-bold mb-4">Tools & Technologies</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-git-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>Git</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-docker-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>Docker</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="devicon-linux-plain colored text-3xl"></i>
+                            <div class="flex-1">
+                                <div class="flex justify-between mb-1">
+                                    <span>Linux</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12 relative">
+        <div class="overlay"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold mb-4">Jibzdev</h3>
+                    <p class="text-gray-300">Full Stack Rails Developer</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/jibzdev" class="hover:text-blue-400 transition-colors">
+                            <i class="devicon-github-original text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/jibzdev" class="hover:text-blue-400 transition-colors">
+                            <i class="devicon-linkedin-plain text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="projects.html" class="hover:text-blue-400 transition-colors">Projects</a></li>
+                        <li><a href="skills.html" class="hover:text-blue-400 transition-colors">Skills</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-300">Feel free to reach out!</p>
+                    <a href="mailto:up2115783@myport.ac.uk" class="text-blue-400 hover:text-blue-300 transition-colors">
+                        up2115783@myport.ac.uk
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Jibzdev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
