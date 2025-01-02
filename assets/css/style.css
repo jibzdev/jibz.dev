@@ -15,9 +15,34 @@
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #2980b9, #6c3483);
 }
+@keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
+}
+.dots {
+    display: inline-block;
+    min-width: 1.5em;
+}
 
-#particles-js {
-    height: auto;
+.floating-icon {
+    position: absolute;
+    animation: float 15s infinite linear;
+    opacity: 0.1;
+    z-index: 0;
+}
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-100px) scale(1.2);
+        opacity: 0;
+    }
 }
 .gradient-bg {
     background: linear-gradient(135deg, #000428, #1a1a2e, #16213e);

@@ -9,10 +9,10 @@ mobileMenu.innerHTML = `
     <div class="p-6 space-y-8 font-['Space_Grotesk']">
         <button class="text-white text-2xl float-right" id="closeMenu">&times;</button>
         <div class="clear-both"></div>
-        <a href="#home" class="block text-white hover:text-blue-400 py-2">Home</a>
-        <a href="#skills" class="block text-white hover:text-blue-400 py-2">Skills</a>
-        <a href="#projects" class="block text-white hover:text-blue-400 py-2">Projects</a>
-        <a href="#contact" class="block text-white hover:text-blue-400 py-2">Contact</a>
+        <a href="index.html" class="block text-white hover:text-blue-400 py-2">Home</a>
+        <a href="skills.html" class="block text-white hover:text-blue-400 py-2">Skills</a>
+        <a href="projects.html" class="block text-white hover:text-blue-400 py-2">Projects</a>
+        <a href="contact.html" class="block text-white hover:text-blue-400 py-2">Contact</a>
     </div>
 `;
 document.body.appendChild(mobileMenu);
@@ -91,4 +91,16 @@ document.addEventListener('DOMContentLoaded', () => {
     for(let i = 0; i < 9; i++) {
         createFloatingIcon();
     }
+});
+
+window.addEventListener('load', () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    setTimeout(() => {
+        loadingScreen.style.opacity = '0';
+        loadingScreen.style.transition = 'all 0.8s ease';
+        loadingScreen.style.transform = 'scale(1.1)';
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 800);
+    }, 1500);
 });

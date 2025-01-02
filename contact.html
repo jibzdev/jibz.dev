@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Jibzdev - Contact">
+    <meta name="description" content="Get in touch with Jibzdev - Full Stack Rails Developer">
+    <meta name="keywords" content="contact, web developer, full stack developer, rails developer">
+    <meta name="author" content="Jibzdev">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+
+    <title>Contact - Jibzdev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="text-white">
+    <nav class="fixed w-full z-50" id="navbar">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+        <div class="w-full transition-all duration-300" id="nav-container">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-['Space_Grotesk'] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                        <i class="devicon-github-original"></i> Jibzdev
+                    </div>
+                    <div class="hidden md:flex space-x-8 font-['Space_Grotesk']">
+                        <a href="index.html" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Home</a>
+                        <a href="skills.html" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Skills</a>
+                        <a href="projects.html" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Projects</a>
+                        <a href="contact.html" class="hover:text-blue-400 transition-all duration-300 hover:scale-110 inline-block">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden py-20">
+        <div id="floating-icons-container" class="absolute inset-0 overflow-hidden"></div>
+        <div class="overlay z-0"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl font-bold text-center mb-12">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                        Get in Touch
+                    </span>
+                </h1>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-8 transform hover:scale-105 transition-all duration-300">
+                        <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <i class="bx bx-envelope text-2xl text-blue-400"></i>
+                                <a href="mailto:contact@jibzdev.com" class="hover:text-blue-400 transition-colors">
+                                    up2115783@myport.ac.uk
+                                </a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="bx bxl-github text-2xl text-blue-400"></i>
+                                <a href="https://github.com/jibzdev" target="_blank" class="hover:text-blue-400 transition-colors">
+                                    github.com/jibzdev
+                                </a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="bx bxl-linkedin text-2xl text-blue-400"></i>
+                                <a href="https://www.linkedin.com/in/ragger-ebrahim-8015b5294/" target="_blank" class="hover:text-blue-400 transition-colors">
+                                    LinkedIn Profile
+                                </a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="bx bxl-discord text-2xl text-blue-400"></i>
+                                <p>_jibz_</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-8">
+                        <h2 class="text-2xl font-bold mb-6">Send a Message</h2>
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400/20 transition-colors" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400/20 transition-colors" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400/20 transition-colors" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="gradient-bg text-white py-12 relative">
+        <div class="overlay"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold mb-4">Jibzdev</h3>
+                    <p class="text-gray-300">Full Stack Rails Developer</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/jibzdev" class="hover:text-blue-400 transition-colors">
+                            <i class="devicon-github-original text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/jibzdev" class="hover:text-blue-400 transition-colors">
+                            <i class="devicon-linkedin-plain text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="projects.html" class="hover:text-blue-400 transition-colors">Projects</a></li>
+                        <li><a href="skills.html" class="hover:text-blue-400 transition-colors">Skills</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-300">Feel free to reach out!</p>
+                    <a href="mailto:up2115783@myport.ac.uk" class="text-blue-400 hover:text-blue-300 transition-colors">
+                        up2115783@myport.ac.uk
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Jibzdev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
